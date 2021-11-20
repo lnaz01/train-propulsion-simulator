@@ -1,0 +1,278 @@
+# Fifteen mile track segment
+Track_
+
+# FUNCTIONS
+# 1. track grade
+Function_
+0.0, 0.0; 5280.0, 1.0; 21120.0, 0.0
+21120.0, 0.0; 26400.0, -0.5; 29040.0, -1.0; 47520.0, 0.0
+47520.0, 0.0; 79200.0, 2.5
+_Function
+
+# 2. track curvature
+Function_
+0.0, 0.0; 10560.0, 0.0
+10560.0, 0.0; 10660.0, 2.0
+10660.0, 2.0; 15840.0, 2.0
+15840.0, 2.0; 15940.0, 0.0
+15940.0, 0.0; 79200.0, 0.0
+_Function
+
+# 3. track superelevation
+Function_
+0.0, 0.0; 10560.0, 0.0
+10560.0, 0.0; 10660.0, -1.0
+10660.0, -1.0; 15840.0, -1.0
+15840.0, -1.0; 15940.0, 0.0
+15940.0, 0.0; 79200.0, 0.0
+_Function
+
+_Track
+
+
+
+
+
+# Standard friction coupler (coupler index 1)
+Coupler_
+
+# FUNCTIONS
+# 1. force-deflection function
+Function_
+-4.0, -400.0; -3.0, -325.0
+-3.0, -325.0; -0.75, -200.0
+-0.75, -200.0; 0.75, 200.0
+0.75, 200.0; 3.0, 325.0
+3.0, 325.0; 4.0, 400.0
+_Function
+
+_Coupler
+
+
+
+
+
+# Loaded gondola (car index 1)
+Car_
+
+# PHYSICAL CONSTANTS
+# 1. mass (kips)
+# 2. length (feet)
+# 3. number of axles
+# 4. cross-sectional area (feet^2)
+# 5. stream-lining coefficient
+# 6. maximum net braking ratio
+# 7. hand brake status
+# 8. hand brake effectiveness ratio
+# 9. truck center spacing (feet)
+# 10. coupler height (feet)
+# 11. center-of-gravity height (feet)
+280.0, 60.0, 4, 105.0, 4.2, 0.1, 0, 0.02, 42.0, 2.7, 7.0
+
+# FUNCTIONS
+# 1. brake rigging efficiency function
+Function_
+15.0,0.46322; 16.0,0.47420; 17.0,0.48391; 18.0,0.49261; 19.0,0.50048; 20.0,0.50766; 21.0,0.51425; 22.0,0.52035; 23.0,0.52600; 24.0,0.53128; 25.0,0.53623; 30.0,0.55710; 35.0,0.57344; 40.0,0.58683; 45.0,0.59814; 50.0,0.60791; 55.0,0.61649; 60.0,0.62414; 65.0,0.63103; 70.0,0.63729; 75.0,0.64303; 80.0,0.64832; 85.0,0.65323; 90.0,0.65780
+_Function
+
+# 2. brake shoe friction coefficient function (assuming a brake shoe temperature of 300 degrees F)
+Function_
+0.0, 0.5568; 1.0, 0.5568
+1.0, 0.5568; 3.0, 0.5028; 5.0, 0.4700; 7.0, 0.4479; 10.0, 0.4249; 20.0, 0.3820; 30.0, 0.3585; 40.0, 0.3425; 50.0, 0.3305; 60.0, 0.3210; 70.0, 0.3131; 80.0, 0.3065
+_Function
+
+_Car
+
+
+
+
+
+# Unloaded gondola (car index 2)
+Car_
+
+# PHYSICAL CONSTANTS
+# 1. mass (kips)
+# 2. length (feet)
+# 3. number of axles
+# 4. cross-sectional area (feet^2)
+# 5. stream-lining coefficient
+# 6. maximum net braking ratio
+# 7. hand brake status
+# 8. hand brake effectiveness ratio
+# 9. truck center spacing (feet)
+# 10. coupler height (feet)
+# 11. center-of-gravity height (feet)
+60.0, 60.0, 4, 105.0, 12.0, 0.1, 0, 0.02, 42.0, 2.7, 3.5
+
+# FUNCTIONS
+# 1. brake rigging efficiency function
+Function_
+15.0,0.46322; 16.0,0.47420; 17.0,0.48391; 18.0,0.49261; 19.0,0.50048; 20.0,0.50766; 21.0,0.51425; 22.0,0.52035; 23.0,0.52600; 24.0,0.53128; 25.0,0.53623; 30.0,0.55710; 35.0,0.57344; 40.0,0.58683; 45.0,0.59814; 50.0,0.60791; 55.0,0.61649; 60.0,0.62414; 65.0,0.63103; 70.0,0.63729; 75.0,0.64303; 80.0,0.64832; 85.0,0.65323; 90.0,0.65780
+_Function
+
+# 2. brake shoe friction coefficient function (assuming a brake shoe temperature of 300 degrees F)
+Function_
+0.0, 0.5568; 1.0, 0.5568
+1.0, 0.5568; 3.0, 0.5028; 5.0, 0.4700; 7.0, 0.4479; 10.0, 0.4249; 20.0, 0.3820; 30.0, 0.3585; 40.0, 0.3425; 50.0, 0.3305; 60.0, 0.3210; 70.0, 0.3131; 80.0, 0.3065
+_Function
+
+_Car
+
+
+
+
+
+# 4400 horsepower locomotive (locomotive index 1)
+Locomotive_
+
+# PHYSICAL CONSTANTS
+# 1. mass
+# 2. length
+# 3. number of axles
+# 4. cross-sectional area
+# 5. stream-lining coefficient
+# 6. maximum net braking ratio
+# 7. hand brake status
+# 8. hand brake effectiveness ratio
+# 9. truck center spacing (feet)
+# 10. coupler height (feet)
+# 11. center-of-gravity height (feet)
+# 12. engine effectiveness ratio
+450.0, 75.0, 6, 160.0, 24.0, 0.1, 0, 0.02, 52.5, 2.7, 7.0, 0.95
+
+# FUNCTIONS
+# 1. brake rigging efficiency function
+Function_
+15.0,0.46322; 16.0,0.47420; 17.0,0.48391; 18.0,0.49261; 19.0,0.50048; 20.0,0.50766; 21.0,0.51425; 22.0,0.52035; 23.0,0.52600; 24.0,0.53128; 25.0,0.53623; 30.0,0.55710; 35.0,0.57344; 40.0,0.58683; 45.0,0.59814; 50.0,0.60791; 55.0,0.61649; 60.0,0.62414; 65.0,0.63103; 70.0,0.63729; 75.0,0.64303; 80.0,0.64832; 85.0,0.65323; 90.0,0.65780
+_Function
+
+# 2. brake shoe friction coefficient function (assuming a brake shoe temperature of 300 degrees F)
+Function_
+0.0, 0.5568; 1.0, 0.5568
+1.0, 0.5568; 3.0, 0.5028; 5.0, 0.4700; 7.0, 0.4479; 10.0, 0.4249; 20.0, 0.3820; 30.0, 0.3585; 40.0, 0.3425; 50.0, 0.3305; 60.0, 0.3210; 70.0, 0.3131; 80.0, 0.3065
+_Function
+
+# 3. full throttle function
+Function_
+0.0,180.0; 7.6,180.0
+7.6,180.0; 8.0,171.19; 10.0,136.95; 12.0,114.13; 15.0,91.3; 20.0,68.48; 25.0,54.78; 30.0,45.65; 40.0,34.24; 50.0,27.39; 60.0,22.83; 70.0,19.56; 80.0,17.12
+_Function
+
+# 4. full dynamic braking function
+Function_
+0.0,108.0; 12.6,108.0
+12.6,108.0; 15.0,91.3; 20.0,68.48; 25.0,54.78; 30.0,45.65; 40.0,34.24; 50.0,27.39; 60.0,22.83; 70.0,19.56; 80.0,17.12
+_Function
+
+_Locomotive
+
+
+
+
+
+# Locomotive operator (locomotive operator index 1)
+LocomotiveOperator_
+
+# PHYSICAL CONSTANTS
+# '0' for distance-based; '1' for time-based
+0
+
+# FUNCTIONS
+# 1. automatic air brake
+Function_
+0.0, 105; 42240.0, 105
+42240.0, 79; 79200.0, 79
+_Function
+
+# 2. independent air brake
+Function_
+0.0, 105; 42240.0, 105
+42240.0, 79; 79200.0, 79
+_Function
+
+# 3. throttle
+Function_
+0.0, 0.5; 2640.0, 0.5
+2640.0, 0.5; 3640.0, 0.75
+3640.0, 0.75; 42240.0, 0.75
+42240.0, 0.75; 42540.0, 0.0
+42540.0, 0.0; 79200.0, 0.0
+_Function
+
+# 4. dynamic brake
+Function_
+0.0, 0.0; 79200.0, 0.0
+_Function
+
+_LocomotiveOperator
+
+
+
+
+
+# Train consist with one leading locomotive and loaded gondolas followed by trailing, unloaded gondolas
+TrainConsist_
+
+# PHYSICAL CONSTANTS
+# 1. air temperature
+# 2. end-of-train device capability
+75.0, 2
+
+# RAIL VEHICLES
+# 1. rail vehicle type indicator ('C' for car or 'L' for locomotive)
+# 2. rail vehicle index
+# 3. coupler index
+# 4. rail vehicle velocity
+# 5. brake pipe pressure (for car) or locomotive operator index (for locomotive)
+# 6. auxiliary reservoir pressure (for car)
+# 7. emergency reservoir pressure (for car)
+L, 1, 1, 50.0, 1                  # rail vehicle index 1
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 2
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 3
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 4
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 5
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 6
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 7
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 8
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 9
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 10
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 11
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 12
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 13
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 14
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 15
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 16
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 17
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 18
+C, 1, 1, 50.0, 105, 105, 105      # rail vehicle index 19
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 20
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 21
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 22
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 23
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 24
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 25
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 26
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 27
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 28
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 29
+C, 2, 1, 50.0, 105, 105, 105      # rail vehicle index 30
+
+_TrainConsist
+
+
+
+
+
+# Simulation parameters
+Simulation_
+
+# Integration method ('0' for fixed time step; '1' for variable time step)
+1
+
+# Sampling rate
+50
+
+# Rail vehicle indices to be saved
+1, 2, 15, 30
+
+_Simulation
